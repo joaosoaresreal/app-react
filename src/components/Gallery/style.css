@@ -1,0 +1,39 @@
+
+.title{
+    color: #fff;
+    text-align: center;
+    font-size: 114%;
+}
+
+.gallery{
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+    gap: 50px;
+    /*padding: 120%;*/
+}
+
+.info{
+    
+}
+
+.botao{
+   display: flex;
+   gap: 20px;
+}
+
+.botao button{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding: 20px;
+    border-radius: 8px;
+    
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 135%;
+}

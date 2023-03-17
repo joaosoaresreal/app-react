@@ -1,0 +1,26 @@
+.agenda{
+    width: 350px;
+    height: 160px;
+    display: flex;
+    background-color: #FFF;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.agenda img{
+    clip-path: circle();
+}
+
+.agendaInfo{
+   justify-content: center;
+
+}
+
+.agenda h1{
+    color: black;
+
+}
