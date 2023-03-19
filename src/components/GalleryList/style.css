@@ -1,8 +1,8 @@
 
-header{
+.headerGaleria{
     padding-top: 30%;
-    display: flex;
     justify-content: center;
+    display: flex;
 }
 
 .title{
@@ -13,12 +13,19 @@ header{
 }
 
 .galleryList{
+    display: flex;
+    justify-content: center;
     background-color: #FFF;
-    text-align: center;
-    color: aliceblue;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5%;
     /*padding: 120%;*/
+}
+
+.galleryList img{
+    max-width:300px;
+    max-height:400px;
+    min-height:400px; 
+    min-width:300px;
 }
 
 .botao{

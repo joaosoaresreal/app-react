@@ -2,10 +2,10 @@ import './App.css'
 import { NavBarMenu } from "./components/NavBarMenu";
 import { BrowserRouter, Routes, Route } from 'react-router-dom' // npm install react-router-dom localforage match-sorter sort-by
 import { Home } from './pages/Home'
-import { Login } from './pages/Login'
-import { Register } from './pages/Register'
-import { StateExample } from './pages/StateExample';
-import { Gallery } from './components/Gallery';
+//import { Login } from './pages/Login'
+//import { Register } from './pages/Register'
+//import { StateExample } from './pages/StateExample';
+//import { Gallery } from './components/Gallery';
 import { Agenda } from './pages/Agenda';
 import { Galeria } from './pages/Galeria';
 

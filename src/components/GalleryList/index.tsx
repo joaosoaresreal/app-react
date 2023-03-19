@@ -30,7 +30,7 @@ export function GalleryList() {
     return (
         <>
 
-            <header>
+            <header className='headerGaleria'>
                 <Title text='Galeria' />
             </header>
 
@@ -41,10 +41,11 @@ export function GalleryList() {
 
                 <div className="galleryList">
                     <img src={movie.images.poster} />
-                    <div className='info'>
-                        {/*<h2><span>Sinopse: </span>{movie.synopsis}</h2>*/}
-                        {/*<p><HourglassMedium size={32} /> {movie.duration}</p>*/}
-                    </div>
+                </div>
+                
+                <div className='info'>
+                    {/*<h2><span>Sinopse: </span>{movie.synopsis}</h2>*/}
+                    {/*<p><HourglassMedium size={32} /> {movie.duration}</p>*/}
                 </div>
 
                 <div className='botao'>
