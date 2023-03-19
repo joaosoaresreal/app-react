@@ -1,9 +1,21 @@
-import { useState } from 'react'
-import { movies } from './data'
-import './style.css'
-import { SkipForwardCircle, SkipBackCircle, HourglassMedium} from "phosphor-react";
+//import { useState } from 'react'
+//import { movies } from './data'
+//import './style.css'
+//import { SkipForwardCircle, SkipBackCircle, HourglassMedium} from "phosphor-react";
 
-export function Gallery() {
+type GalleryProps = {
+    children: React.ReactNode; // 'children' SÃO OS FILHOS
+}
+
+export function Gallery({children}:GalleryProps) {
+
+    return(
+        <div className='gallery'>
+            {children}
+        </div>
+    )
+
+    /* 
     const [number, setNumber] = useState(0)
     let movie = movies[number]
 
@@ -44,5 +56,6 @@ export function Gallery() {
             </div>
 
         </>
-    )
+        )
+    */
 }

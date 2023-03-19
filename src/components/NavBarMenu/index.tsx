@@ -5,9 +5,9 @@ export function NavBarMenu() {
     return(
     <>
         <nav className="navbar-menu">
-            <a title="Início" href="#"><House size={40} /></a>
-            <a title="Perfil" href="#"><User size={40} /></a>
-            <a title="Configurações" href="#"><Gear size={40} /></a>
+            <a title="Início" href="#"><House size={30} /></a>
+            <a title="Perfil" href="#"><User size={30} /></a>
+            <a title="Configurações" href="#"><Gear size={30} /></a>
         </nav>
     </>
     )

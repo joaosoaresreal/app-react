@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Menu } from "../../components/Menu";
 import { MenuItem } from "../../components/MenuItem";
 import { Title } from "../../components/Title";
-import { Button } from "../../components/Button";
+// import { Button } from "../../components/Button";
 
 export function Home() {
     return (

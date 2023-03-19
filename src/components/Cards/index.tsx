@@ -1,10 +1,19 @@
 import './style.css'
-import { Button } from '../Button'
+// import { Button } from '../Button'
 
-export function Cards(){
+type CardsProps = {
+    children: React.ReactNode; // 'children' SÃO OS FILHOS
+}
+
+export function Cards({children}:CardsProps){
 
     return(
         <>
+        <div className='cards'>
+            {children}
+        </div>
+
+        {/*
             <section className='agenda'>
                 <img src="https://randomuser.me/api/portraits/men/89.jpg" alt="" />
                 <div className='agendaInfo'>
@@ -13,6 +22,7 @@ export function Cards(){
                     <Button text='Detalhes' type='primary' />
                 </div>
             </section>
+        */}
         </>
     )
 
