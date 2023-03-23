@@ -1,34 +1,29 @@
 import './style.css'
-import React from 'react'
 import { Button } from '../Button'
+import { dados } from '../../types'
 
-/*
 type CardListProps = {
-    img: string,
-    nome: string,
-    email: string,
-    botao: React.ReactNode
+    CardData:dados
 }
-*/
 
-export function CardsList(/*{img, nome, email, botao}:CardListProps*/){
+export function CardsList({CardData}:CardListProps){
+    const {name, email, picture} = CardData
+
     return(
         <>
-            
-           <section className='CardsList'>
-                <img src="https://randomuser.me/api/portraits/men/89.jpg" alt="" />
+           <div className='CardsList'>
+                <img src={picture.medium} alt="" />
                 <div className='CardsListInfo'>
-                    <h1>Nome Aqui</h1>
-                    <p>Email Aqui</p>
+                    <h1>{name.first}</h1>
+                    <p>{email}</p>
                     <Button text='Detalhes' type='primary' />
                 </div>
-            </section>
+            </div>
+            
             
             {/*
             <section className='CardsList'>
-                <div className='CardsListImagem'>
-                    {img}
-                </div>
+                {img}
                 <div className='CardsListInfo'>
                     <h1>{nome}</h1>
                     <p>{email}</p>

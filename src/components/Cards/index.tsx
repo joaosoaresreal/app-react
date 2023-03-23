@@ -6,7 +6,6 @@ type CardsProps = {
 }
 
 export function Cards({children}:CardsProps){
-
     return(
         <>
         <div className='cards'>
