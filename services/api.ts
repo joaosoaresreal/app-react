@@ -6,6 +6,6 @@ const api = axios.create({
 });
 
 export async function getUsers() {
-    const users = await api.get('?results=10&?nat=BR')
+    const users = await api.get('?results=5&?nat=BR')
     return users.data.results
 }

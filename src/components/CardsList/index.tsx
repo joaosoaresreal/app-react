@@ -1,6 +1,7 @@
 import './style.css'
-import { Button } from '../Button'
+//import { Button } from '../Button'
 import { dados } from '../../types'
+import Button from '@mui/material/Button'
 
 type CardListProps = {
     CardData:dados
@@ -16,7 +17,8 @@ export function CardsList({CardData}:CardListProps){
                 <div className='CardsListInfo'>
                     <h1>{name.first}</h1>
                     <p>{email}</p>
-                    <Button text='Detalhes' type='primary' />
+                    <Button variant="contained">Detalhes</Button>
+                    {/*<Button text='Detalhes' type='primary' />*/}
                 </div>
             </div>
             
