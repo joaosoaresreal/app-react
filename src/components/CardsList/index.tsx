@@ -4,25 +4,28 @@ import { dados } from '../../types'
 import Button from '@mui/material/Button'
 
 type CardListProps = {
-    CardData:dados
+    CardData: dados
 }
 
-export function CardsList({CardData}:CardListProps){
-    const {name, email, picture} = CardData
+export function CardsList({ CardData }: CardListProps) {
+    const { name, email, picture } = CardData
 
-    return(
+    return (
         <>
-           <div className='CardsList'>
-                <img src={picture.medium} alt="" />
-                <div className='CardsListInfo'>
-                    <h1>{name.first}</h1>
-                    <p>{email}</p>
-                    <Button variant="contained">Detalhes</Button>
-                    {/*<Button text='Detalhes' type='primary' />*/}
+            
+            <div className='Cards'>
+                <div className='CardsList'>
+                    <img src={picture.medium} alt="" />
+                    <div className='CardsListInfo'>
+                        <h1>{name.first}</h1>
+                        <p>{email}</p>
+                        <Button variant="contained">Detalhes</Button>
+                        {/*<Button text='Detalhes' type='primary' />*/}
+                    </div>
                 </div>
             </div>
-            
-            
+
+
             {/*
             <section className='CardsList'>
                 {img}

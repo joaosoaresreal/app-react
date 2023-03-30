@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { movies } from './../../../services/filmes'
 import './style.css'
-import { SkipForwardCircle, SkipBackCircle, HourglassMedium } from "phosphor-react";
-import { Button } from '../Button';
+// import { SkipForwardCircle, SkipBackCircle } from "phosphor-react";
+//import { Button } from '../Button';
 import { Title } from '../Title';
+import Button from '@mui/material/Button'
 
 export function GalleryList() {
     const [number, setNumber] = useState(0)
@@ -49,8 +50,10 @@ export function GalleryList() {
                 </div>
 
                 <div className='botao'>
-                    <button onClick={previous}><SkipBackCircle size={15} />Anterior</button>
-                    <button onClick={next}>Próximo<SkipForwardCircle size={15} /></button>
+                <Button variant="contained" onClick={previous}>ANTERIOR</Button>
+                <Button variant="contained" onClick={next}>PROXIMO</Button>
+                    {/*<button onClick={previous}><SkipBackCircle size={15} />Anterior</button>
+                    <button onClick={next}>Próximo<SkipForwardCircle size={15} /></button> */}
                 </div>
             </main>
         </>

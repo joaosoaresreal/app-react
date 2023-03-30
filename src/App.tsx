@@ -8,7 +8,7 @@ import { Home } from './pages/Home'
 //import { Gallery } from './components/Gallery';
 import { Agenda } from './pages/Agenda';
 import { Galeria } from './pages/Galeria';
-import BoxSx from './components/layout';
+import BaseLayout from './layout/BaseLayout';
 
 // FLUXO DE TODA APLICAÇÃO É FEITA AQUI
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<Home/>}/> {/*'path' e 'element' SÃO PROPS, QUANDO ACESSO APENAS '/' É A PAG INICIAL*/}
           <Route path='/gallery' element={<Galeria/>}/>
           <Route path='/agenda' element={<Agenda/>}/>
-          <Route path='/box' element={<BoxSx/>}/>
+          <Route path='/box' element={<BaseLayout/>}/>
         </Routes>
 
         <NavBarMenu />

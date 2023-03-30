@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 70vh; /*ALTERADO PARA CENTRALIZAR*/
   gap: 50px;
 }
 

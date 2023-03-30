@@ -3,11 +3,11 @@
     height: 160px;
     display: flex;
     background-color: #FFF;
-    padding: 15px;
+    gap: 20px;
+    padding: 10px;
     border-radius: 10px;
     align-items: center;
     align-content: center;
-    gap: 19px;
 }
 
 .CardsList img{
@@ -16,4 +16,9 @@
 
 .CardsListInfo h1{
     color: black;
+}
+
+.Cards{
+    
+    padding-bottom: 2%;
 }

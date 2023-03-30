@@ -1,12 +1,17 @@
 import Box from '@mui/material/Box';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+// import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 
-export default function BoxSx() {
+type BaseLayoutProps = {
+    children: React.ReactNode
+}
+
+export default function BaseLayout({ children }: BaseLayoutProps) {
     return (
+        /*
         <Box
             sx={{ flexGrow: 1 }}
         >
@@ -23,7 +28,7 @@ export default function BoxSx() {
 
                         </IconButton>
                         <Typography variant="h6" color="inherit" component="div" sx={{ flexGrow: 1 }}>
-                            TESTE AppBar
+                            AppBar
                         </Typography>
 
                         <Button color="inherit">Login</Button>
@@ -32,5 +37,21 @@ export default function BoxSx() {
             </AppBar>
 
         </Box>
-    );
+        */
+
+        <>
+            <AppBar>
+                <Toolbar>
+                    <Typography variant='h5'>
+                        App React
+                    </Typography>
+
+                </Toolbar>
+            </AppBar>
+            <Box>
+                {children}
+            </Box>
+        </>
+
+    )
 }
