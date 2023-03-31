@@ -7,5 +7,8 @@ export type dados = {
     email:string,
     picture:{
         medium:string
+    },
+    login:{
+        uuid:string
     }
 }

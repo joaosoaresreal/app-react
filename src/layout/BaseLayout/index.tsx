@@ -6,10 +6,11 @@ import Typography from '@mui/material/Typography';
 // import Button from '@mui/material/Button';
 
 type BaseLayoutProps = {
-    children: React.ReactNode
+    children: React.ReactNode,
+    appBarTitle: string
 }
 
-export default function BaseLayout({ children }: BaseLayoutProps) {
+export default function BaseLayout({ children, appBarTitle }: BaseLayoutProps) {
     return (
         /*
         <Box
@@ -42,8 +43,8 @@ export default function BaseLayout({ children }: BaseLayoutProps) {
         <>
             <AppBar>
                 <Toolbar>
-                    <Typography variant='h5'>
-                        App React
+                    <Typography variant='h5' >
+                        {appBarTitle}
                     </Typography>
 
                 </Toolbar>

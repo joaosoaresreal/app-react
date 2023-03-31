@@ -1,42 +1,53 @@
 //import { Button } from '../../components/Button'
 import './style.css'
-import { Title } from '../../components/Title'
-import {getUsers} from '../../../services/api'
+//import { Title } from '../../components/Title'
+import { getUsers } from '../../../services/api'
 import { Cards } from '../../components/Cards'
 import { CardsList } from '../../components/CardsList'
 import { useEffect, useState } from 'react'
 import { dados } from '../../types'
+import BaseLayout from '../../layout/BaseLayout'
+import { CircularProgress, TextField } from '@mui/material'
 
 export function Agenda() {
-    const[search, setSearch] = useState('')
-    const[users, setUsers] = useState<dados[]>([])
+    const [search, setSearch] = useState('')
+    const [isLoading, setIsLoading] = useState<Boolean>(false)
+    const [users, setUsers] = useState<dados[]>([])
 
-    useEffect(()=>{
+    const filterDados = ()=>{
+        
+    }
+
+    useEffect(() => {
         async function listarUsers() {
+            setIsLoading(true)
             setUsers(await getUsers())
+            setIsLoading(false)
         }
         listarUsers()
     }, [])
 
     return (
-        <>
-            <header>
-                <Title text='Agenda de Contatos' />
-            </header>
-            <input onInput={(event)=>setSearch(event.target.value)} placeholder='Localizar' className='inputLocalizar' type="search" />
-            
-            <Cards>
-                {/*<CardsList img={<img src="https://randomuser.me/api/portraits/men/89.jpg" alt="" />} 
-                nome='Nome Aqui' email='Email Aqui' botao={<Button text='Detalhes' type='primary'/>}/>*/}
-                {
-                  users.map(dados=>{
-                    return <CardsList CardData={dados}/>
-                  })  
-                }
-            </Cards>
+
+        <BaseLayout appBarTitle='Agenda'>
+            <TextField variant='outlined' />
+
+            {isLoading ? (
+                <CircularProgress />) : (
+                    <Cards>
+                    {
+                        users.map(dados => {
+                            return <CardsList key={dados.login.uuid} CardData={dados} />
+                        })
+                    }
+                </Cards>
+            )
+
+            }
 
 
+        </BaseLayout>
 
-        </>
+
     )
 }
