@@ -30,7 +30,7 @@ export function Agenda() {
     return (
 
         <BaseLayout appBarTitle='Agenda'>
-            <TextField variant='outlined' />
+            <TextField onChange={(e)=> setSearch(e.target.value)} variant='outlined' />
 
             {isLoading ? (
                 <CircularProgress />) : (
