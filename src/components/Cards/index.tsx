@@ -1,18 +1,27 @@
-import './style.css'
+import { List } from '@mui/material'
+// import './style.css'
 // import { Button } from '../Button'
 
 type CardsProps = {
     children: React.ReactNode; // 'children' SÃO OS FILHOS
 }
 
-export function Cards({children}:CardsProps){
-    return(
+export function Cards({ children }: CardsProps) {
+    return (
         <>
-        <div className='cards'>
-            {children}
-        </div>
+            <List>
+                {children}
+            </List>
 
-        {/*
+            {
+                /*
+                <div className='cards'>
+                    {children}
+                </div> 
+                */
+            }
+
+            {/*
             <section className='agenda'>
                 <img src="https://randomuser.me/api/portraits/men/89.jpg" alt="" />
                 <div className='agendaInfo'>

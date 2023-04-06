@@ -9,7 +9,7 @@ import BaseLayout from "../../layout/BaseLayout"
 
 export function Home() {
     return (
-        <BaseLayout>
+        <BaseLayout appBarTitle="App React">
 
 
             <Menu> {/*PARA CADA ITEM DE MENU VOU CHAMAR O MENU ITEM, QUE NÃO TERÁ FILHOS*/}
